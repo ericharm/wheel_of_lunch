@@ -1,14 +1,16 @@
-# spec/spec_helper.rb
 require 'rack/test'
 require 'rspec'
 
 ENV['RACK_ENV'] = 'test'
 
-require File.expand_path '../../wheel.rb', __FILE__
+require_relative File.join('..', 'app')
 
-module RSpecMixin
+RSpec.configure do |config|
   include Rack::Test::Methods
-  def app() Sinatra::Application end
+
+  def app
+    Wheel
+  end
 end
 
 # For RSpec 2.x and 3.x
@@ -34,10 +36,6 @@ end
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
-
-  # Sinatra
-  config.include RSpecMixin
-
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.

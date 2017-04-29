@@ -4,7 +4,11 @@ require 'active_record'
 require './src/init_db'
 require './src/option'
 
-# Move all this database junk into that one file
+ENV['RACK_ENV'] ||= 'development'
+
+require 'bundler'
+Bundler.require :default, ENV['RACK_ENV'].to_sym
+
 def connect_to_db(db_filename)
   ActiveRecord::Base.establish_connection :adapter => 'sqlite3', :database => "db/#{db_filename}"
   I18n.enforce_available_locales = false
