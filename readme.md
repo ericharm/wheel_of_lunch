@@ -1,6 +1,6 @@
 # Setup
 
-https://github.com/ericharm/wheel_of_lunch.git
+git clone https://github.com/ericharm/wheel_of_lunch.git
 
 bundle install
 
