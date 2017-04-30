@@ -1,12 +1,16 @@
 source 'https://rubygems.org' do
   gem 'sinatra', '2.0.0.rc2'
   gem 'json'
-  gem 'activerecord'
   gem 'sqlite3'
   gem 'rerun'
+  gem 'activerecord'
+  gem 'sinatra-activerecord'
+  gem 'rake'
 
   group :test, :development do
     gem 'rspec'
+    gem 'pry'
+    gem 'tux'
   end
 
   group :test do
