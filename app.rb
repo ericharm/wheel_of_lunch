@@ -8,24 +8,6 @@ Bundler.require :default, ENV['RACK_ENV'].to_sym
 
 require './src/option'
 
-#move this db stuff out of here
-#def connect_to_db(db_filename)
-  #ActiveRecord::Base.establish_connection :adapter => 'sqlite3', :database => "db/#{db_filename}"
-  #I18n.enforce_available_locales = false
-   #ActiveRecord::Base.logger = Logger.new(STDOUT)
-   #ActiveSupport::LogSubscriber.colorize_logging = false
-#end
-
-#def get_db_filename(env)
-  #return 'test.sqlite' if env == 'test'
-  #return 'wheel.sqlite'
-#end
-
-#db_filename =  get_db_filename(ENV['RACK_ENV'])
-#DatabaseInitializer.initialize_db("db/#{db_filename}")
-#connect_to_db(db_filename)
-
-
 class Wheel < Sinatra::Base
   register Sinatra::ActiveRecordExtension
 
@@ -71,3 +53,4 @@ class Wheel < Sinatra::Base
     end
   end
 end
+

@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20170430004914) do
 
-  create_table "products", force: :cascade do |t|
+  create_table "options", force: :cascade do |t|
     t.string "name"
     t.boolean "default_on"
     t.string "ip"
