@@ -2,20 +2,25 @@
 <html lang="en" ng-app="wheel">
   <head>
     <meta charset="UTF-8">
-    <title>Wheel Of Food</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Wheel Of Lunch</title>
+    
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+
     <script src="https://use.fontawesome.com/e23d6c4fc6.js"></script>
     <script src="js/angular.min.js"></script>
     <script src="js/index.js"></script>
   </head>
   <body ng-controller="AppCtrl" ng-init='getOptions("<%= url('/') %>")'>
-
     <div class="container">
 
       <div id="wheel">
-        <canvas id="canvas" width="300" height="300"></canvas>
+        <canvas id="canvas" width="500" height="500"></canvas>
       </div>
+
+      <button id="spin">Stop!</button>
 
       <div class="panel panel-default">
         <div class="panel-heading clearfix">
@@ -30,8 +35,8 @@
           <div id="options" ng-show="show">
             <ul>
               <li ng-repeat="option in options">
-                {{ option.name }}
-                <input type="checkbox" class="pull-right" ng-checked="{{ option.default_on }}">
+                  {{ option.name }}
+                  <input type="checkbox" class="pull-right" name="{{options.name}}" ng-model="option.on" ng-change="toggleOption(option)" />
               </li>
             </ul>
 
@@ -45,9 +50,10 @@
           </div> <!-- options -->
         </div> <!-- panel-body -->
       </div> <!-- panel -->
-    </div> <!-- container -->
 
-    <script src="js/wheel.js"></script>
+      <a href="https://wheelof.com/lunch/?zip=10018&query=lunch&radius=0.3">I want something else</a>
+
+    </div> <!-- container -->
   </body>
 </html>
 

@@ -1,16 +1,18 @@
+
+
 function rand(min, max) {
     return Math.random() * (max - min) + min;
 }
 
 var color = ['#fbc','#f88','#fbc','#f88','#fbc','#f88', "#fbc", "#f67"];
-//var label = ['10', '200', '50', '100', '5', '500', '0', "jPOT"];
+var label = ['10', '200', '50', '100', '5', '500', '0', "jPOT"];
 
-var label = [];
-for (var i = 0; i < options.length; i++) {
-    if (options[i].default_on) {
-        label.push(options[i].name);
-    }
-}
+//var label = [];
+//for (var i = 0; i < options.length; i++) {
+    //if (options[i].default_on) {
+        //label.push(options[i].name);
+    //}
+//}
 
 var slices = color.length;
 var sliceDeg = 360/slices;

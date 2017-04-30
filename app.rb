@@ -40,7 +40,7 @@ class Wheel < Sinatra::Base
 
     content_type :json
 
-    if option
+    if option && option.errors.messages.blank?
       status 201
       response = {
         status: 'success', data: option.to_json

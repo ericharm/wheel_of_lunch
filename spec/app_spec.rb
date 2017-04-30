@@ -20,7 +20,7 @@ describe "options" do
   describe "#get /" do
     it "should return a view" do
       get '/'
-      expect(last_response.body).to include('<title>Wheel Of Food</title>')
+      expect(last_response.body).to include('<title>Wheel Of Lunch</title>')
     end
   end
 
@@ -46,6 +46,16 @@ describe "options" do
     end
   end
 
-  
+  describe "#post /option with blank name" do
+    it "should return an error" do
+      name = ""
+      data = { :name => name }
+      post '/option', data.to_json
+
+      expect(last_response.status).to eql(400)   
+      expect(Option.all.length).to eql(1)
+    end
+  end
+
 end
 
