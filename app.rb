@@ -16,7 +16,7 @@ class Wheel < Sinatra::Base
   # home
   get '/' do
     status 200
-    body "hello\n"
+    erb :index
   end
 
   # options
@@ -25,14 +25,16 @@ class Wheel < Sinatra::Base
     content_type :json
     status 200
     options = Option.all.to_json
-    body options
+    body options 
   end
 
   # create
   post '/option' do
+    data = JSON.parse(request.body.read)
+
     option = Option.create(
-      name: params[:name],
-      default_on: 0,
+      name: data["name"],
+      default_on: false,
       ip: request.ip
     )
 

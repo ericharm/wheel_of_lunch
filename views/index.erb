@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="wheel">
+  <head>
+    <meta charset="UTF-8">
+    <title>Wheel Of Food</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://use.fontawesome.com/e23d6c4fc6.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+  <body ng-controller="AppCtrl" ng-init='getOptions("<%= url('/') %>")'>
+
+    <div class="container">
+
+      <div id="wheel">
+        <canvas id="canvas" width="300" height="300"></canvas>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading clearfix">
+          <strong>Options</strong>
+          <a ng-click="show=!show" class="btn pull-right">
+            <button class="btn btn-primary"><i class="fa {{ chevronDirection(show) }}"></i></button>
+          </a>
+        </div>
+
+        <div class="panel-body" ng-show="show">
+
+          <div id="options" ng-show="show">
+            <ul>
+              <li ng-repeat="option in options">
+                {{ option.name }}
+                <input type="checkbox" class="pull-right" ng-checked="{{ option.default_on }}">
+              </li>
+            </ul>
+
+            <div id="add_option">
+              <label for="name">
+                <input type="text" name="name" id="name" ng-model="name" />
+              </label>
+              <button type="button" ng-click="createOption()">Add Option</button>
+            </div> <!-- add_option -->
+
+          </div> <!-- options -->
+        </div> <!-- panel-body -->
+      </div> <!-- panel -->
+    </div> <!-- container -->
+
+    <script src="js/wheel.js"></script>
+  </body>
+</html>
+
