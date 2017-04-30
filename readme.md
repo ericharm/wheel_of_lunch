@@ -1,6 +1,6 @@
 # Setup
 
-git pull
+https://github.com/ericharm/wheel_of_lunch.git
 
 bundle install
 
@@ -8,7 +8,7 @@ rake db:setup
 
 # Run tests
 
-RACK_ENV=test rake db:setup && rspec spec/
+rspec spec/
 
 # Run local server
 
