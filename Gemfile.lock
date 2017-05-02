@@ -12,8 +12,15 @@ GEM
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+    airbrussh (1.2.0)
+      sshkit (>= 1.6.1, != 1.7.0)
     arel (8.0.0)
     bond (0.5.1)
+    capistrano (3.8.1)
+      airbrussh (>= 1.0.0)
+      i18n
+      rake (>= 10.0.0)
+      sshkit (>= 1.9.0)
     coderay (1.1.1)
     concurrent-ruby (1.0.5)
     diff-lcs (1.3)
@@ -22,6 +29,7 @@ GEM
     ffi (1.9.17)
     i18n (0.8.1)
     json (2.1.0)
+    kgio (2.11.0)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -29,6 +37,9 @@ GEM
     method_source (0.8.2)
     minitest (5.10.1)
     mustermann (1.0.0)
+    net-scp (1.2.1)
+      net-ssh (>= 2.6.5)
+    net-ssh (4.1.0)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -38,6 +49,7 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
+    raindrops (0.18.0)
     rake (12.0.0)
     rb-fsevent (0.9.8)
     rb-inotify (0.9.8)
@@ -76,6 +88,9 @@ GEM
       sinatra (>= 1.0)
     slop (3.6.0)
     sqlite3 (1.3.13)
+    sshkit (1.13.1)
+      net-scp (>= 1.1.2)
+      net-ssh (>= 2.8.0)
     thread_safe (0.3.6)
     tilt (2.0.7)
     tux (0.3.0)
@@ -85,12 +100,16 @@ GEM
       sinatra (>= 1.2.1)
     tzinfo (1.2.3)
       thread_safe (~> 0.1)
+    unicorn (5.3.0)
+      kgio (~> 2.6)
+      raindrops (~> 0.7)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   activerecord!
+  capistrano!
   faker!
   json!
   pry!
@@ -102,6 +121,7 @@ DEPENDENCIES
   sinatra-activerecord!
   sqlite3!
   tux!
+  unicorn!
 
 BUNDLED WITH
    1.14.6

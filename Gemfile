@@ -7,6 +7,9 @@ source 'https://rubygems.org' do
   gem 'sinatra-activerecord'
   gem 'rake'
 
+  gem 'unicorn'
+  gem 'capistrano'
+
   group :test, :development do
     gem 'rspec'
     gem 'pry'
@@ -17,6 +20,5 @@ source 'https://rubygems.org' do
     gem 'rack-test'
     gem 'faker'
   end
-
 end
 
