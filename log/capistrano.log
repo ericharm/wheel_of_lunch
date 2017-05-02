@@ -1,0 +1,197 @@
+# Logfile created on 2017-05-02 00:53:35 -0400 by logger.rb/54362
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-02 00:53:35 -0400 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [d67b61a6] Running /usr/bin/env mkdir -p /tmp as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [d67b61a6] Command: /usr/bin/env mkdir -p /tmp
+  INFO [d67b61a6] Finished in 5.788 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-wheel_of_lunch-production-ericharm.sh 0.0%
+  INFO Uploading /tmp/git-ssh-wheel_of_lunch-production-ericharm.sh 100.0%
+  INFO [75f967a1] Running /usr/bin/env chmod 700 /tmp/git-ssh-wheel_of_lunch-production-ericharm.sh as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [75f967a1] Command: /usr/bin/env chmod 700 /tmp/git-ssh-wheel_of_lunch-production-ericharm.sh
+  INFO [75f967a1] Finished in 0.123 seconds with exit status 0 (successful).
+  INFO [49794834] Running /usr/bin/env git ls-remote git@github.com:ericharm/wheel_of_lunch.git HEAD as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [49794834] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-wheel_of_lunch-production-ericharm.sh" ; /usr/bin/env git ls-remote git@github.com:ericharm/wheel_of_lunch.git HEAD )
+ DEBUG [49794834] 	Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
+ DEBUG [49794834] 	Permission denied (publickey).
+ DEBUG [49794834] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-02 00:56:46 -0400 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [3d765270] Running /usr/bin/env mkdir -p /tmp as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [3d765270] Command: /usr/bin/env mkdir -p /tmp
+  INFO [3d765270] Finished in 6.267 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-wheel_of_lunch-production-ericharm.sh 0.0%
+  INFO Uploading /tmp/git-ssh-wheel_of_lunch-production-ericharm.sh 100.0%
+  INFO [0fd78813] Running /usr/bin/env chmod 700 /tmp/git-ssh-wheel_of_lunch-production-ericharm.sh as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [0fd78813] Command: /usr/bin/env chmod 700 /tmp/git-ssh-wheel_of_lunch-production-ericharm.sh
+  INFO [0fd78813] Finished in 0.128 seconds with exit status 0 (successful).
+  INFO [05216c90] Running /usr/bin/env git ls-remote git@github.com:ericharm/wheel_of_lunch.git HEAD as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [05216c90] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-wheel_of_lunch-production-ericharm.sh" ; /usr/bin/env git ls-remote git@github.com:ericharm/wheel_of_lunch.git HEAD )
+ DEBUG [05216c90] 	Permission denied (publickey).
+ DEBUG [05216c90] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-02 00:58:31 -0400 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [3e103ead] Running /usr/bin/env mkdir -p /tmp as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [3e103ead] Command: /usr/bin/env mkdir -p /tmp
+  INFO [3e103ead] Finished in 4.687 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-wheel_of_lunch-production-ericharm.sh 0.0%
+  INFO Uploading /tmp/git-ssh-wheel_of_lunch-production-ericharm.sh 100.0%
+  INFO [ac5ab3d3] Running /usr/bin/env chmod 700 /tmp/git-ssh-wheel_of_lunch-production-ericharm.sh as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [ac5ab3d3] Command: /usr/bin/env chmod 700 /tmp/git-ssh-wheel_of_lunch-production-ericharm.sh
+  INFO [ac5ab3d3] Finished in 0.127 seconds with exit status 0 (successful).
+  INFO [bc053758] Running /usr/bin/env git ls-remote git@github.com:ericharm/wheel_of_lunch.git HEAD as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [bc053758] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-wheel_of_lunch-production-ericharm.sh" ; /usr/bin/env git ls-remote git@github.com:ericharm/wheel_of_lunch.git HEAD )
+ DEBUG [bc053758] 	c2fe48d48f993892a63fe37f2facad29e9937180	HEAD
+  INFO [bc053758] Finished in 0.294 seconds with exit status 0 (successful).
+  INFO [1e40e80d] Running /usr/bin/env mkdir -p /home/ec2-user/wheel_of_lunch/shared /home/ec2-user/wheel_of_lunch/releases as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [1e40e80d] Command: /usr/bin/env mkdir -p /home/ec2-user/wheel_of_lunch/shared /home/ec2-user/wheel_of_lunch/releases
+  INFO [1e40e80d] Finished in 0.125 seconds with exit status 0 (successful).
+ DEBUG [c948ed43] Running [ -f /home/ec2-user/wheel_of_lunch/current/REVISION ] as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [c948ed43] Command: [ -f /home/ec2-user/wheel_of_lunch/current/REVISION ]
+ DEBUG [c948ed43] Finished in 0.145 seconds with exit status 1 (failed).
+ DEBUG [259263b8] Running [ -f /home/ec2-user/wheel_of_lunch/repo/HEAD ] as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [259263b8] Command: [ -f /home/ec2-user/wheel_of_lunch/repo/HEAD ]
+ DEBUG [259263b8] Finished in 0.123 seconds with exit status 1 (failed).
+ DEBUG [78f367d9] Running if test ! -d /home/ec2-user/wheel_of_lunch; then echo "Directory does not exist '/home/ec2-user/wheel_of_lunch'" 1>&2; false; fi as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [78f367d9] Command: if test ! -d /home/ec2-user/wheel_of_lunch; then echo "Directory does not exist '/home/ec2-user/wheel_of_lunch'" 1>&2; false; fi
+ DEBUG [78f367d9] Finished in 0.124 seconds with exit status 0 (successful).
+  INFO [99da1566] Running /usr/bin/env git clone --mirror git@github.com:ericharm/wheel_of_lunch.git /home/ec2-user/wheel_of_lunch/repo as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [99da1566] Command: cd /home/ec2-user/wheel_of_lunch && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-wheel_of_lunch-production-ericharm.sh" ; /usr/bin/env git clone --mirror git@github.com:ericharm/wheel_of_lunch.git /home/ec2-user/wheel_of_lunch/repo )
+ DEBUG [99da1566] 	Cloning into bare repository '/home/ec2-user/wheel_of_lunch/repo'...
+ DEBUG [99da1566] 	Warning: Permanently added the RSA host key for IP address '192.30.253.113' to the list of known hosts.
+  INFO [99da1566] Finished in 0.355 seconds with exit status 0 (successful).
+ DEBUG [54a8b449] Running if test ! -d /home/ec2-user/wheel_of_lunch/repo; then echo "Directory does not exist '/home/ec2-user/wheel_of_lunch/repo'" 1>&2; false; fi as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [54a8b449] Command: if test ! -d /home/ec2-user/wheel_of_lunch/repo; then echo "Directory does not exist '/home/ec2-user/wheel_of_lunch/repo'" 1>&2; false; fi
+ DEBUG [54a8b449] Finished in 0.128 seconds with exit status 0 (successful).
+  INFO [00af2d57] Running /usr/bin/env git remote set-url origin git@github.com:ericharm/wheel_of_lunch.git as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [00af2d57] Command: cd /home/ec2-user/wheel_of_lunch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-wheel_of_lunch-production-ericharm.sh" ; /usr/bin/env git remote set-url origin git@github.com:ericharm/wheel_of_lunch.git )
+  INFO [00af2d57] Finished in 0.140 seconds with exit status 0 (successful).
+  INFO [432078df] Running /usr/bin/env git remote update --prune as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [432078df] Command: cd /home/ec2-user/wheel_of_lunch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-wheel_of_lunch-production-ericharm.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [432078df] 	Fetching origin
+  INFO [432078df] Finished in 0.285 seconds with exit status 0 (successful).
+ DEBUG [ce4b2412] Running if test ! -d /home/ec2-user/wheel_of_lunch/repo; then echo "Directory does not exist '/home/ec2-user/wheel_of_lunch/repo'" 1>&2; false; fi as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [ce4b2412] Command: if test ! -d /home/ec2-user/wheel_of_lunch/repo; then echo "Directory does not exist '/home/ec2-user/wheel_of_lunch/repo'" 1>&2; false; fi
+ DEBUG [ce4b2412] Finished in 0.129 seconds with exit status 0 (successful).
+  INFO [9506a081] Running /usr/bin/env mkdir -p /home/ec2-user/wheel_of_lunch/releases/20170502045836 as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [9506a081] Command: cd /home/ec2-user/wheel_of_lunch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-wheel_of_lunch-production-ericharm.sh" ; /usr/bin/env mkdir -p /home/ec2-user/wheel_of_lunch/releases/20170502045836 )
+  INFO [9506a081] Finished in 0.139 seconds with exit status 0 (successful).
+  INFO [71b186bb] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ec2-user/wheel_of_lunch/releases/20170502045836 as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [71b186bb] Command: cd /home/ec2-user/wheel_of_lunch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-wheel_of_lunch-production-ericharm.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ec2-user/wheel_of_lunch/releases/20170502045836 )
+  INFO [71b186bb] Finished in 0.145 seconds with exit status 0 (successful).
+ DEBUG [838090a6] Running if test ! -d /home/ec2-user/wheel_of_lunch/repo; then echo "Directory does not exist '/home/ec2-user/wheel_of_lunch/repo'" 1>&2; false; fi as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [838090a6] Command: if test ! -d /home/ec2-user/wheel_of_lunch/repo; then echo "Directory does not exist '/home/ec2-user/wheel_of_lunch/repo'" 1>&2; false; fi
+ DEBUG [838090a6] Finished in 0.128 seconds with exit status 0 (successful).
+ DEBUG [76a7b089] Running /usr/bin/env git rev-list --max-count=1 master as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [76a7b089] Command: cd /home/ec2-user/wheel_of_lunch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-wheel_of_lunch-production-ericharm.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [76a7b089] 	c2fe48d48f993892a63fe37f2facad29e9937180
+ DEBUG [76a7b089] Finished in 0.148 seconds with exit status 0 (successful).
+ DEBUG [c6087994] Running if test ! -d /home/ec2-user/wheel_of_lunch/releases/20170502045836; then echo "Directory does not exist '/home/ec2-user/wheel_of_lunch/releases/20170502045836'" 1>&2; false; fi as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [c6087994] Command: if test ! -d /home/ec2-user/wheel_of_lunch/releases/20170502045836; then echo "Directory does not exist '/home/ec2-user/wheel_of_lunch/releases/20170502045836'" 1>&2; false; fi
+ DEBUG [c6087994] Finished in 0.143 seconds with exit status 0 (successful).
+  INFO [1fc1e819] Running /usr/bin/env echo "c2fe48d48f993892a63fe37f2facad29e9937180" >> REVISION as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [1fc1e819] Command: cd /home/ec2-user/wheel_of_lunch/releases/20170502045836 && /usr/bin/env echo "c2fe48d48f993892a63fe37f2facad29e9937180" >> REVISION
+  INFO [1fc1e819] Finished in 0.143 seconds with exit status 0 (successful).
+  INFO [f81edd9f] Running /usr/bin/env ln -s /home/ec2-user/wheel_of_lunch/releases/20170502045836 /home/ec2-user/wheel_of_lunch/releases/current as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [f81edd9f] Command: /usr/bin/env ln -s /home/ec2-user/wheel_of_lunch/releases/20170502045836 /home/ec2-user/wheel_of_lunch/releases/current
+  INFO [f81edd9f] Finished in 0.128 seconds with exit status 0 (successful).
+  INFO [466eb7ca] Running /usr/bin/env mv /home/ec2-user/wheel_of_lunch/releases/current /home/ec2-user/wheel_of_lunch as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [466eb7ca] Command: /usr/bin/env mv /home/ec2-user/wheel_of_lunch/releases/current /home/ec2-user/wheel_of_lunch
+  INFO [466eb7ca] Finished in 0.128 seconds with exit status 0 (successful).
+ DEBUG [0280b3df] Running /usr/bin/env ls -x /home/ec2-user/wheel_of_lunch/releases as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [0280b3df] Command: /usr/bin/env ls -x /home/ec2-user/wheel_of_lunch/releases
+ DEBUG [0280b3df] 	20170502045836
+ DEBUG [0280b3df] Finished in 0.135 seconds with exit status 0 (successful).
+ DEBUG [cb203071] Running if test ! -d /home/ec2-user/wheel_of_lunch/releases; then echo "Directory does not exist '/home/ec2-user/wheel_of_lunch/releases'" 1>&2; false; fi as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [cb203071] Command: if test ! -d /home/ec2-user/wheel_of_lunch/releases; then echo "Directory does not exist '/home/ec2-user/wheel_of_lunch/releases'" 1>&2; false; fi
+ DEBUG [cb203071] Finished in 0.124 seconds with exit status 0 (successful).
+  INFO [c5fea6a1] Running /usr/bin/env echo "Branch master (at c2fe48d48f993892a63fe37f2facad29e9937180) deployed as release 20170502045836 by ericharm" >> /home/ec2-user/wheel_of_lunch/revisions.log as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [c5fea6a1] Command: cd /home/ec2-user/wheel_of_lunch/releases && /usr/bin/env echo "Branch master (at c2fe48d48f993892a63fe37f2facad29e9937180) deployed as release 20170502045836 by ericharm" >> /home/ec2-user/wheel_of_lunch/revisions.log
+  INFO [c5fea6a1] Finished in 0.150 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-02 00:59:53 -0400 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [7a37a1c4] Running /usr/bin/env mkdir -p /tmp as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [7a37a1c4] Command: /usr/bin/env mkdir -p /tmp
+  INFO [7a37a1c4] Finished in 4.996 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-wheel_of_lunch-production-ericharm.sh 0.0%
+  INFO Uploading /tmp/git-ssh-wheel_of_lunch-production-ericharm.sh 100.0%
+  INFO [552aceed] Running /usr/bin/env chmod 700 /tmp/git-ssh-wheel_of_lunch-production-ericharm.sh as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [552aceed] Command: /usr/bin/env chmod 700 /tmp/git-ssh-wheel_of_lunch-production-ericharm.sh
+  INFO [552aceed] Finished in 0.129 seconds with exit status 0 (successful).
+  INFO [41a3482f] Running /usr/bin/env git ls-remote git@github.com:ericharm/wheel_of_lunch.git HEAD as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [41a3482f] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-wheel_of_lunch-production-ericharm.sh" ; /usr/bin/env git ls-remote git@github.com:ericharm/wheel_of_lunch.git HEAD )
+ DEBUG [41a3482f] 	c2fe48d48f993892a63fe37f2facad29e9937180	HEAD
+  INFO [41a3482f] Finished in 0.283 seconds with exit status 0 (successful).
+  INFO [ac0b6ec6] Running /usr/bin/env mkdir -p /home/ec2-user/wheel_of_lunch/shared /home/ec2-user/wheel_of_lunch/releases as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [ac0b6ec6] Command: /usr/bin/env mkdir -p /home/ec2-user/wheel_of_lunch/shared /home/ec2-user/wheel_of_lunch/releases
+  INFO [ac0b6ec6] Finished in 0.125 seconds with exit status 0 (successful).
+ DEBUG [f6a34914] Running [ -f /home/ec2-user/wheel_of_lunch/current/REVISION ] as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [f6a34914] Command: [ -f /home/ec2-user/wheel_of_lunch/current/REVISION ]
+ DEBUG [f6a34914] Finished in 0.127 seconds with exit status 1 (failed).
+ DEBUG [28592b76] Running [ -f /home/ec2-user/wheel_of_lunch/repo/HEAD ] as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [28592b76] Command: [ -f /home/ec2-user/wheel_of_lunch/repo/HEAD ]
+ DEBUG [28592b76] Finished in 0.123 seconds with exit status 1 (failed).
+ DEBUG [f97a1fa8] Running if test ! -d /home/ec2-user/wheel_of_lunch; then echo "Directory does not exist '/home/ec2-user/wheel_of_lunch'" 1>&2; false; fi as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [f97a1fa8] Command: if test ! -d /home/ec2-user/wheel_of_lunch; then echo "Directory does not exist '/home/ec2-user/wheel_of_lunch'" 1>&2; false; fi
+ DEBUG [f97a1fa8] Finished in 0.123 seconds with exit status 0 (successful).
+  INFO [305915a2] Running /usr/bin/env git clone --mirror git@github.com:ericharm/wheel_of_lunch.git /home/ec2-user/wheel_of_lunch/repo as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [305915a2] Command: cd /home/ec2-user/wheel_of_lunch && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-wheel_of_lunch-production-ericharm.sh" ; /usr/bin/env git clone --mirror git@github.com:ericharm/wheel_of_lunch.git /home/ec2-user/wheel_of_lunch/repo )
+ DEBUG [305915a2] 	Cloning into bare repository '/home/ec2-user/wheel_of_lunch/repo'...
+  INFO [305915a2] Finished in 0.362 seconds with exit status 0 (successful).
+ DEBUG [860083b8] Running if test ! -d /home/ec2-user/wheel_of_lunch/repo; then echo "Directory does not exist '/home/ec2-user/wheel_of_lunch/repo'" 1>&2; false; fi as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [860083b8] Command: if test ! -d /home/ec2-user/wheel_of_lunch/repo; then echo "Directory does not exist '/home/ec2-user/wheel_of_lunch/repo'" 1>&2; false; fi
+ DEBUG [860083b8] Finished in 0.123 seconds with exit status 0 (successful).
+  INFO [8e3a24c6] Running /usr/bin/env git remote set-url origin git@github.com:ericharm/wheel_of_lunch.git as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [8e3a24c6] Command: cd /home/ec2-user/wheel_of_lunch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-wheel_of_lunch-production-ericharm.sh" ; /usr/bin/env git remote set-url origin git@github.com:ericharm/wheel_of_lunch.git )
+  INFO [8e3a24c6] Finished in 0.138 seconds with exit status 0 (successful).
+  INFO [0310ff2f] Running /usr/bin/env git remote update --prune as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [0310ff2f] Command: cd /home/ec2-user/wheel_of_lunch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-wheel_of_lunch-production-ericharm.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [0310ff2f] 	Fetching origin
+  INFO [0310ff2f] Finished in 0.306 seconds with exit status 0 (successful).
+ DEBUG [cdd03859] Running if test ! -d /home/ec2-user/wheel_of_lunch/repo; then echo "Directory does not exist '/home/ec2-user/wheel_of_lunch/repo'" 1>&2; false; fi as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [cdd03859] Command: if test ! -d /home/ec2-user/wheel_of_lunch/repo; then echo "Directory does not exist '/home/ec2-user/wheel_of_lunch/repo'" 1>&2; false; fi
+ DEBUG [cdd03859] Finished in 0.132 seconds with exit status 0 (successful).
+  INFO [832f4560] Running /usr/bin/env mkdir -p /home/ec2-user/wheel_of_lunch/releases/20170502045958 as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [832f4560] Command: cd /home/ec2-user/wheel_of_lunch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-wheel_of_lunch-production-ericharm.sh" ; /usr/bin/env mkdir -p /home/ec2-user/wheel_of_lunch/releases/20170502045958 )
+  INFO [832f4560] Finished in 0.134 seconds with exit status 0 (successful).
+  INFO [3adc78f2] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ec2-user/wheel_of_lunch/releases/20170502045958 as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [3adc78f2] Command: cd /home/ec2-user/wheel_of_lunch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-wheel_of_lunch-production-ericharm.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ec2-user/wheel_of_lunch/releases/20170502045958 )
+  INFO [3adc78f2] Finished in 0.147 seconds with exit status 0 (successful).
+ DEBUG [6273ad4f] Running if test ! -d /home/ec2-user/wheel_of_lunch/repo; then echo "Directory does not exist '/home/ec2-user/wheel_of_lunch/repo'" 1>&2; false; fi as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [6273ad4f] Command: if test ! -d /home/ec2-user/wheel_of_lunch/repo; then echo "Directory does not exist '/home/ec2-user/wheel_of_lunch/repo'" 1>&2; false; fi
+ DEBUG [6273ad4f] Finished in 0.141 seconds with exit status 0 (successful).
+ DEBUG [5c7337d0] Running /usr/bin/env git rev-list --max-count=1 master as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [5c7337d0] Command: cd /home/ec2-user/wheel_of_lunch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-wheel_of_lunch-production-ericharm.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [5c7337d0] 	c2fe48d48f993892a63fe37f2facad29e9937180
+ DEBUG [5c7337d0] Finished in 0.152 seconds with exit status 0 (successful).
+ DEBUG [ffcc96a6] Running if test ! -d /home/ec2-user/wheel_of_lunch/releases/20170502045958; then echo "Directory does not exist '/home/ec2-user/wheel_of_lunch/releases/20170502045958'" 1>&2; false; fi as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [ffcc96a6] Command: if test ! -d /home/ec2-user/wheel_of_lunch/releases/20170502045958; then echo "Directory does not exist '/home/ec2-user/wheel_of_lunch/releases/20170502045958'" 1>&2; false; fi
+ DEBUG [ffcc96a6] Finished in 0.128 seconds with exit status 0 (successful).
+  INFO [ece098cc] Running /usr/bin/env echo "c2fe48d48f993892a63fe37f2facad29e9937180" >> REVISION as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [ece098cc] Command: cd /home/ec2-user/wheel_of_lunch/releases/20170502045958 && /usr/bin/env echo "c2fe48d48f993892a63fe37f2facad29e9937180" >> REVISION
+  INFO [ece098cc] Finished in 0.142 seconds with exit status 0 (successful).
+  INFO [a5107753] Running /usr/bin/env ln -s /home/ec2-user/wheel_of_lunch/releases/20170502045958 /home/ec2-user/wheel_of_lunch/releases/current as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [a5107753] Command: /usr/bin/env ln -s /home/ec2-user/wheel_of_lunch/releases/20170502045958 /home/ec2-user/wheel_of_lunch/releases/current
+  INFO [a5107753] Finished in 0.123 seconds with exit status 0 (successful).
+  INFO [d76afe40] Running /usr/bin/env mv /home/ec2-user/wheel_of_lunch/releases/current /home/ec2-user/wheel_of_lunch as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [d76afe40] Command: /usr/bin/env mv /home/ec2-user/wheel_of_lunch/releases/current /home/ec2-user/wheel_of_lunch
+  INFO [d76afe40] Finished in 0.129 seconds with exit status 0 (successful).
+ DEBUG [368d4100] Running /usr/bin/env ls -x /home/ec2-user/wheel_of_lunch/releases as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [368d4100] Command: /usr/bin/env ls -x /home/ec2-user/wheel_of_lunch/releases
+ DEBUG [368d4100] 	20170502045958
+ DEBUG [368d4100] Finished in 0.128 seconds with exit status 0 (successful).
+ DEBUG [f04ba6c8] Running if test ! -d /home/ec2-user/wheel_of_lunch/releases; then echo "Directory does not exist '/home/ec2-user/wheel_of_lunch/releases'" 1>&2; false; fi as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [f04ba6c8] Command: if test ! -d /home/ec2-user/wheel_of_lunch/releases; then echo "Directory does not exist '/home/ec2-user/wheel_of_lunch/releases'" 1>&2; false; fi
+ DEBUG [f04ba6c8] Finished in 0.124 seconds with exit status 0 (successful).
+  INFO [17b37558] Running /usr/bin/env echo "Branch master (at c2fe48d48f993892a63fe37f2facad29e9937180) deployed as release 20170502045958 by ericharm" >> /home/ec2-user/wheel_of_lunch/revisions.log as ec2-user@ec2-34-202-21-170.compute-1.amazonaws.com
+ DEBUG [17b37558] Command: cd /home/ec2-user/wheel_of_lunch/releases && /usr/bin/env echo "Branch master (at c2fe48d48f993892a63fe37f2facad29e9937180) deployed as release 20170502045958 by ericharm" >> /home/ec2-user/wheel_of_lunch/revisions.log
+  INFO [17b37558] Finished in 0.145 seconds with exit status 0 (successful).

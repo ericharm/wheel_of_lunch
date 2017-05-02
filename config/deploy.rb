@@ -1,14 +1,14 @@
 # config valid only for current version of Capistrano
 lock "3.8.1"
 
-set :application, "my_app_name"
-set :repo_url, "git@example.com:me/my_repo.git"
+set :application, "wheel_of_lunch"
+set :repo_url, "git@github.com:ericharm/wheel_of_lunch.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-# set :deploy_to, "/var/www/my_app_name"
+set :deploy_to, "/home/ec2-user/wheel_of_lunch"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
@@ -30,4 +30,4 @@ set :repo_url, "git@example.com:me/my_repo.git"
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 
 # Default value for keep_releases is 5
-# set :keep_releases, 5
+set :keep_releases, 2
